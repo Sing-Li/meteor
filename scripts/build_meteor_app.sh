@@ -1,8 +1,9 @@
 #!/bin/bash
 
+source /opt/meteord/install_phantomjs.sh
+
 curl https://install.meteor.com | /bin/sh  
 
-rm *.tar.gz
 
 cd /app
 meteor build --directory /tmp/the-app
